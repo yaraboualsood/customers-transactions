@@ -2,7 +2,7 @@
   "name": "dashboard",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://yaraboualsood.github.io/customers-transactions",
+  "homepage": "https://yaraboualsood.github.io/customers-transactions/",
   "type": "module",
   "scripts": {
     "dev": "vite",
