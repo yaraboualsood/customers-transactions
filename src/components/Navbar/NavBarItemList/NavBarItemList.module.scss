@@ -1,0 +1,50 @@
+.button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem;
+  gap: 1rem;
+  border: 0;
+  font-weight: 600;
+  color: #E090AD;
+  text-transform: capitalize;
+
+  & > svg {
+    margin-left: auto;
+  }
+
+  &.active {
+    background-color: rgba(92, 89, 232, 0.15);
+    border-radius: 0.625rem;
+    color: #E090AD;
+
+    & > svg {
+      transform: rotate(180deg);
+    }
+
+    & svg path {
+      fill: #E090AD;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin: 1rem 0;
+  font-weight: 600;
+
+  & a {
+    color: #667085;
+    display: block;
+    padding: 0.5rem;
+    padding-left: 2.8rem;
+  }
+
+  & a.active {
+    background-color: #E090AD;
+    border-radius: 0.5rem;
+    color: #fff;
+  }
+}

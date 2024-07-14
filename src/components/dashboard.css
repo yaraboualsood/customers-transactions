@@ -1,0 +1,139 @@
+.customer-list{
+  margin-left: 100px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  /* margin: 22px auto;  */
+  width: 90%; /* Adjust the width to fit within the container */
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #e0e2e7;
+  box-shadow: 0px -1px 2px 0px rgba(16, 24, 40, 0.1);
+  padding: 30px 0px;
+  border-width: 2px 0px;
+ 
+}
+
+table thead tr {
+  background: #f9f9f9;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+table tr td,
+table tr th {
+  padding: 11px 15px;
+  color: #333843;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+table thead tr th {
+  text-align: center;
+  border-bottom: 1px solid #f0f1f3;
+}
+
+@media (max-width: 768px) {
+  table {
+    display: block;
+  }
+
+  table thead,
+  table tbody,
+  table th,
+  table td,
+  table tr {
+    display: block;
+  }
+
+  table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  table tr {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 20px);
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
+
+  .table .tfooter .showing {
+    margin-bottom: 10px;
+  }
+
+  .table .tfooter ul {
+    justify-content: flex-start;
+  }
+}
+
+.table .tfooter {
+  background-color: #fff;
+  padding: 13px 28px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  border-top: 1px solid #e0e2e7;
+  border-radius: 0 0 8px 8px;
+}
+
+.table .tfooter .showing {
+  color: #667085;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.07px;
+}
+
+.table .tfooter ul {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+}
+
+.table .tfooter ul li {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #dedefa;
+  color: #E090AD;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.07px;
+}
+
+.table .tfooter ul .active {
+  color: #fff;
+  background: #E090AD;
+}

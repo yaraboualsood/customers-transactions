@@ -1,0 +1,56 @@
+.navbaritem {
+  color: #667085;
+  border-radius: 0.5rem;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  border: 10;
+  padding: 0.5rem; // Add padding for spacing
+
+  & > div {
+    text-transform: capitalize;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: inherit;
+    background-color: inherit;
+    transition: all ease 0.2s;
+
+    & span:last-child {
+      transform: translateY(2px);
+    }
+  }
+
+  &.active {
+    background-color: #E090AD;
+    color: #fff;
+
+    & svg path {
+      fill: #fff;
+    }
+  }
+
+  &.active_stroke {
+    & svg path {
+      fill: none;
+      stroke: #fff;
+    }
+  }
+
+  & .notifications {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #f04438;
+    border-radius: 50%;
+    font-size: 0.625rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+}
